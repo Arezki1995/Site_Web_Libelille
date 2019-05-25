@@ -109,50 +109,9 @@
     width: 100%;
     height: 100%;
   }
-
-  .entry-form {
-    background: #252020;
-    border-radius: 100%;
-    text-align: center;
-    padding: 6em;
-    width: 450px;
-    height: 450px;
-  }
-
-  .entry-form h2 {
-    color: #ffffff;
-    margin: 0;
-  }
-
-  .entry-form .form-control {
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid;
-    border-radius: 0;
-    box-shadow: none;
-    height: 45px;
-    margin: 10px 0;
-  }
-
-  .entry-form .submit-btn {
-    background: #ffffff;
-    border-radius: 50px;
-    border: 0;
-    color: #252020;
-    width: 50%;
-    height: 50px;
-    margin: 30px auto;
-    margin-bottom: 10px;
-  }
-
-  .entry-form .submit-btn:hover {
-    background: #3f51b5;
-    color: #ffffff;
-  }
-
   section {
     position: relative;
-    padding: 80px 0;
+    padding: 20px 0;
   }
 
   #team,
@@ -251,25 +210,7 @@
     to {transform: rotate(360deg);}
   }
 
-  /* -------------------------------------
-      SERVICE CONTENT
-  ----------------------------------------*/
-  .soluAccess_container,
-  .soluDent_container,
-  .soluOptique_container,
-  .soluAngio_container,
-  .soluMed_container,
-  .soluAudio_container,
-  .tarif_container{
-    display: block;
-    width: 100%;
-    padding: 60px;
-    overflow: hidden;
-    height: auto;
-    margin: 20px auto;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 8px 2px rgba(0,0,0, 0.30);
- }   
+ 
 
 
   /*---------------------------------------
@@ -278,8 +219,8 @@
 .logo{
   height: 45px;
   margin: 0 auto;
-
-
+  padding-top: -10px;
+  padding-bottom: 10px;
 }
   .custom-navbar {
     background: #ffffff;
@@ -380,7 +321,7 @@
 
   #home h3 {
     color: #f9f9f9;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     margin: 0;
     padding: 5px 0 40px 0;
@@ -435,6 +376,7 @@
   .presentation-thumb {
     border: 2px solid #f0f0f0;
     padding: 2em 3em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .presentation-thumb span {
@@ -448,7 +390,8 @@
     height: 60px;
     line-height: 60px;
     text-align: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
   }
 
@@ -486,33 +429,17 @@
     line-height: 50px;
     text-align: center;
   }
-
-  .titre-section{
-    text-align: left;
-    
-  }
-  .titre-section h2{
-    color: #0076a1;
-    font-size: 40px;
-    padding-bottom: 0px;
-  }
-
-  .soluAccess-info h3,
-  .soluDent-info h3,
-  .soluAngio-info h3,
-  .soluOptique-info h3,
-  .soluMed-info h3,
-  .soluAudio-info h3{
-    color: #ffffff;
-    display: inline-block;
-    background: #7fc203;
-    text-align: left;
-    width: auto;
-    padding: 10px;
-    font-size: 18px;
-  }
-
-
+  
+  .tarif_container{
+    display: block;
+    width: 100%;
+    padding: 60px;
+    overflow: hidden;
+    height: auto;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 8px 2px rgba(0,0,0, 0.30);
+ }  
   /*---------------------------------------
       TEAM              
   -----------------------------------------*/
@@ -530,6 +457,7 @@
     text-align: left;
     display: block;
     margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .team-info {
@@ -562,11 +490,11 @@
   -----------------------------------------*/
 
   #services .section-title {
-    text-align: left;
+    text-align: center;
   }
 
   #services .owl-theme .owl-nav {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   #services .owl-theme .owl-nav [class*=owl-] {
@@ -580,7 +508,7 @@
   }
 
   .services-thumb {
-    background: #f9f9f9;
+    background: #fdfdfd;
     position: relative;
   }
 
@@ -589,7 +517,7 @@
   }
 
   .services-image {
-    background: linear-gradient(to right, #202020, #101010);
+    background: linear-gradient(to bottom, #202020, #101010);
   }
 
 
@@ -606,7 +534,8 @@
   }
 
   .services-detail {
-    padding: 25px 25px 15px 25px;
+    padding: 25px 25px 15px 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .services-detail h3 {
@@ -617,26 +546,61 @@
     height: auto;
   }
 
-  .image-service{
 
-    vertical-align: middle;
-    width: 500px;
-    height: 100%;
-    margin: 0 auto;
-    height: 100%;
-    float: right;
-    padding-left: 50px;
-    padding-right: 0px;
-    padding-bottom: 35px;
-    padding-top:  0px;
-    clear: both;
-  }
 
-  .mini-logo{
-    display: inline;
-    width: 200px;
-    padding-bottom: 0px;
-  }
+    /* -------------------------------------
+      SERVICE CONTENT
+  ----------------------------------------*/
+
+  .soluContainer{
+    width: 100%;
+    padding: 3%;
+    overflow: hidden;
+    height: auto;
+    margin: 4% auto;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }   
+
+  .solu-info{
+    display: block;
+ }
+
+ .logo-section{
+  text-align: left;
+  width: 25%;
+}
+
+.image-service{
+  background: #ffffff;
+  display: inline;
+  border: solid ;
+  border-radius: 4px;
+  border-color: #dcf1e6;
+  
+  float: right;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  width: 35%;
+}
+
+.services-h3{
+  margin-bottom: 1em;
+  color: #ffffff;
+  background: #7fc203;
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;  
+}
+.services-paragraph{
+  color: #001d01;
+  display: inline;
+  font-size: 1.1em;
+  text-align: end;
+  
+}
+
+
   /*---------------------------------------
      NEWS              
   -----------------------------------------*/
@@ -646,6 +610,7 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .news-thumb .news-image {
@@ -675,6 +640,7 @@
     margin: 20px 0;
     padding: 4em 3em;
     text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   #services .col-md-4,
@@ -877,16 +843,20 @@
   -------------------------------*/
   .questionnaires span{
     background: #3f51b5;
-    border-radius: 50px;
+    border-radius: 1%;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 1em;
     font-weight: bold;
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 1%;
+    height: 1%;
+    line-height: 1em;
     text-align: center;
     margin-bottom: 5px;
+  }
+
+  .title-questionnaires{
+    text-align: center;
   }
 
   /*---------------------------------------
@@ -917,7 +887,7 @@
     .tarif-info,
     .team-thumb,
     .footer-info {
-      margin-bottom: 50px;
+      margin-bottom: 5%;
     }
 
     .contact-image {
@@ -984,10 +954,6 @@
       margin-right: 0;
     }
 
-    .footer-info.newsletter-form {
-      margin-bottom: 0;
-    }
-
     .entry-form {
       display: block;
       margin: 0 auto;
@@ -1016,15 +982,6 @@
 
     #home h3 {
       font-size: 14px;
-    }
-
-    .entry-form {
-      border-radius: 0;
-      padding: 2em;
-      max-width: 100%;
-      max-height: 100%;
-      width: inherit;
-      height: inherit;
     }
   }
   

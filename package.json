@@ -1,0 +1,23 @@
+{
+  "name": "libelille",
+  "version": "1.0.0",
+  "description": "Libelille Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arezki1995/Site_Web_Libelille.git"
+  },
+  "author": "Arezki AIT MOUHEB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arezki1995/Site_Web_Libelille/issues"
+  },
+  "homepage": "https://github.com/Arezki1995/Site_Web_Libelille#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0"
+  }
+}

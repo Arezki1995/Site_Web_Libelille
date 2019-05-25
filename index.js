@@ -4,7 +4,7 @@ let path = require('path');
 
 let server = express();
 
-server.use(express.static(path.join(__dirname,'New Libelille')));
+server.use(express.static(path.join(__dirname,'./')));
 
 server.get('/', function(req,res){
     res.sendFile('/index.html', {root: __dirname })
