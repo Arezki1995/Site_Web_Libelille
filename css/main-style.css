@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
 
   body {
-    background: #ffffff;
+    background: #363636;
     font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
     padding-top: 70px;
@@ -20,15 +20,16 @@
   }
 
   h1 {
-    color: #252525;
+    color: #ffffff;
     font-size: 3em;
     line-height: normal;
   }
 
   h2 {
-    color: #353535;
+    color: #f8f1f1;
     font-size: 2em;
     padding-bottom: 10px;
+    font-weight: bold;
   }
 
   h3 {
@@ -131,13 +132,14 @@
 
   .section-btn {
     background: transparent;
+    font-weight: bold;
     border-radius: 50px;
     border: 1px solid #ffffff;
     color: #ffffff;
     font-size: inherit;
-    font-weight: normal;
     padding: 15px 30px;
     transition: 0.5s;
+    
   }
   .q_btn {
     margin-top: 50px;
@@ -217,10 +219,9 @@
       MENU              
   -----------------------------------------*/
 .logo{
-  height: 45px;
+  height: 60px;
   margin: 0 auto;
-  padding-top: -10px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
   .custom-navbar {
     background: #ffffff;
@@ -229,16 +230,19 @@
     -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
-    padding: 12px 0;
+    padding: 5px 0;
     margin-bottom: 0;
     padding: 0;
   }
-
-  .custom-navbar .navbar-brand {
+.navbar-brand{
+  padding: 0px;
+  margin: 0px auto;
+}
+    .custom-navbar .navbar-brand {
     color: #454545;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 50px;
   }
 
   .custom-navbar .navbar-nav.navbar-nav-first {
@@ -252,8 +256,8 @@
   }
 
   .custom-navbar .navbar-nav.navbar-right li a {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
     font-size: 1em;
   }
 
@@ -374,9 +378,21 @@
   -----------------------------------------*/
 
   .presentation-thumb {
-    border: 2px solid #f0f0f0;
-    padding: 2em 3em;
+    border: 2px solid #e5e5ee;
+    background: rgb(255, 255, 255);
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0;
+    border-radius: 4px;
+  }
+  .presentation-thumb h3 {
+    color: #252525;
+    font-size: 1.2em;
+    margin: 5px auto;
+  }
+
+  .expansion{
+    
   }
 
   .presentation-thumb span {
@@ -437,7 +453,7 @@
     overflow: hidden;
     height: auto;
     margin: 20px auto;
-    background: rgba(255, 255, 255, 0.05);
+    background:#FFF;
     box-shadow: 0 8px 8px 2px rgba(0,0,0, 0.30);
  }  
   /*---------------------------------------
@@ -550,16 +566,29 @@
 
     /* -------------------------------------
       SERVICE CONTENT
-  ----------------------------------------*/
+      ----------------------------------------*/
+      .img-responsive{
+        box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .col-sm-4{
+        background: #494949;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: solid;
+        border-color: rgb(54, 54, 54); 
+      }
 
   .soluContainer{
+    background: white;
     width: 100%;
-    padding: 3%;
+    padding: 5%;
     overflow: hidden;
     height: auto;
     margin: 4% auto;
-    background: rgba(255, 255, 255, 0.05);
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:solid;
+    border-radius: 14px;
  }   
 
   .solu-info{
@@ -595,7 +624,8 @@
 .services-paragraph{
   color: #001d01;
   display: inline;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  line-height: 2em;
   text-align: end;
   
 }
@@ -689,62 +719,6 @@
 
 
   /*---------------------------------------
-      CONTACT             
-  -----------------------------------------*/
-
-  #contact {
-    background: #3f51b5;
-  }
-
-  #contact h2 {
-    color: #ffffff;
-  }
-
-  #contact .section-title {
-    padding-bottom: 10px;
-  }
-
-  #contact h2 > small,
-  #contact p,
-  #contact a {
-    color: #f9f9f9;
-  }
-
-  #contact-form {
-    padding: 1em 0;
-  }
-
-  #contact-form .col-md-12,
-  #contact-form .col-md-4 {
-    padding-left: 0;
-  }
-
-  #contact-form .form-control {
-    border: 0;
-    border-radius: 5px;
-    box-shadow: none;
-    margin: 10px 0;
-  }
-
-  #contact-form input {
-    height: 50px;
-  }
-
-  #contact-form input[type='submit'] {
-    border-radius: 50px;
-    border: 1px solid transparent;
-  }
-
-  #contact-form input[type='submit']:hover {
-    background: transparent;
-    border-color: #ffffff;
-    color: #ffffff;
-  }
-  
-
-
-
-  /*---------------------------------------
      FOOTER              
   -----------------------------------------*/
 
@@ -765,7 +739,7 @@
 
   footer a,
   footer p {
-    color: #909090;
+    color: #ffffff;
   }
 
   footer strong {
@@ -881,6 +855,7 @@
 
     .presentation-thumb p{
       padding: 10px;
+      padding-top: 10px;
     }
 
     .presentation-thumb,
@@ -902,8 +877,8 @@
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .custom-navbar .nav li a {
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: 8px;
+      padding-left: 8px;
     }
   }
 
@@ -925,7 +900,11 @@
       text-align: center;
       overflow: hidden;
     }
-
+    .logo{
+      height: 30px;
+      margin: 0 auto;
+      padding-bottom: 4px;
+    }
     .custom-navbar .navbar-brand,
     .custom-navbar .nav li a {
       line-height: normal;
